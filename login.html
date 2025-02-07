@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="/CSS/input.css">
+    <link rel="stylesheet" href="/CSS/output.css">
     <title>Login Page</title>
 </head>
-<body class=" border-t-fuchsia-600 overflow-hidden border-b-fuchsia-600 border-4 border-x-fuchsia-700 h-screen bg-slate-50">
+<body class="  overflow-hidden   h-screen bg-slate-50">
     <nav class="border-2 border-b-gray-500 border-t-gray-500 p-2 flex items-center justify-between">
-        <img src="Logo.png" alt="Sky Logo" class="w-14">
+        <img src="/Images/Logo.png" alt="Sky Logo" class="w-14">
         <p class="text-lg">Believe in Better - A better and healthier future at Sky UK for customers, employees and everyone</p>
         <div class="flex gap-4 text-lg">
-            <a href="" class="border-b-2 border-b-gray-700">Login</a>
-            <a href="" class="border-b-2 border-b-gray-700">Signup</a>
+            <a href="" class="hover:border-b-2 hover:border-b-gray-700">Login</a>
+            <a href="" class="hover:border-b-2 hover:border-b-gray-500">Signup</a>
         </div>
     </nav>
     <div
-    class="h-[92.5%] w-full flex items-center justify-between p-2 px-10"
-    style="background: linear-gradient(to right, #FF8C42, #ff53dd, #7c119f, #0481ff);">
-        <img src="bg-left.jpg" alt="Picture of Sky UK headquarters" class="float-start h-3/4 border-4 border-white">
-        <form action="" class="h-[95%] bg-white w-3/6 right-0 border-black border-4 rounded-3xl text-center p-2  text-2xl">
+    class="h-[92.5%] w-full flex items-center justify-around p-2 px-10 bg-cover bg-center bg-no-repeat"
+    style="background-image: url('/Images/dark-abstract-with-flowing-waves.jpg');">
+        <img src="/Images/bg-left.jpg" alt="Picture of Sky UK headquarters" class="float-start h-[60%] border-4 border-white">
+        <form action="" class="h-[85%] bg-white w-2/6 right-0 border-white border-2 rounded-3xl text-center p-2  text-2xl"
+        style="background: linear-gradient(to right, #FF8C42, #ff53dd, #7c119f, #0481ff);">
             <h1 class="mb-4 font-bold text-4xl">Login Form</h1>
-            <select name="" id="" class="border-2 w-3/6  border-black">
+            <select name="" id="" class="border-2 w-3/6 mb-4 border-black">
                 <option value="null">Select role</option>
                 <option value="">Engineer</option>
                 <option value="">Team Leader</option>
@@ -32,12 +33,12 @@
             <label for="" class="block text-left ml-20">Email: <br>
                 <input type="text" name="" id="" class="border-2 w-5/6 p-2 border-black rounded-lg">
             </label> <br>
-            <label for="" class="block text-left ml-20">Password: <br>
+            <label for="" class="block  text-left ml-20">Password: <br>
                 <input type="password" name="" id="" class="border-2 w-5/6 mb-2 p-2 border-black rounded-lg">
             </label>
             <p class="block text-left ml-20">Forgotten Password? <a href="" class="border-b-black border-b-2">Click here</a></p>
 
-            <button type="submit" class="mt-14 text-3xl border-2 mb-12 border-black p-2 w-2/6 rounded-md">Login</button>
+            <button type="submit" class="mt-10 text-3xl border-2 mb-6 border-black bg-white p-2 w-2/6 rounded-md">Login</button>
             <p>Don't have an account? <a href="" class="border-b-black border-b-2">Sign up</a></p>
         </form>
     </div>
