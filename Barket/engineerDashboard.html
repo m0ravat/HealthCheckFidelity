@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/input.css">
-    <link rel="stylesheet" href="/CSS/output.css">
-    <title>Engineer Dashboard</title>
+    <meta charset="UTF-8" />
+    <title>Engineer DashBoard</title>
 </head>
-    <style>
+<style>
     /* Updated background color to white if exact Sky color is unknown */
     body {
         background-color: black;
@@ -29,16 +26,23 @@
         font-size: 20px;
         font-weight: bold;
     }
+
     
 
-    .skylogo {
-        text-align: center;
+    th:nth-child(3) {
+        text-align: left;
+        padding-left: 50px
     }
 
-    .skylogo img {
-        height: 50px; /* Adjust size as needed */
-        
+    
+
+    img.skylogo {
+        text-align: center;
+        height: 50px;
+        margin-right: -100px;
     }
+
+   
 
     button {
         background-color: #0072C6; /* Sky Blue */
@@ -75,18 +79,19 @@
         right: 4%;
         border: 4px solid rgb(131, 130, 130);
     }
+    
+    
 
 </style>
+
 <body>
-     <table>
+    <table>
         <tr>
             <th>Profile</th>
             <th>Health Check Quiz</th>
             <th>Team Health Check Summary</th>
-            <th class="skylogo">
-                <img src="skylogo.png" alt="Sky Logo"> <!-- Sky logo -->
-            </th>
-            <th>Sign Out</th>
+            <th><img src="sky-logo.jpg" alt="Sky logo" class="skylogo"></th>
+            <th >Sign Out</th>
         </tr>
     </table>
 
