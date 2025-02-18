@@ -7,7 +7,165 @@
     <link rel="stylesheet" href="/CSS/output.css">
     <title>Document</title>
 </head>
-<body>
-    
+<body class=" text-xl overflow-x-hidden "
+    style = "background: linear-gradient(to right, #FF8C42, #ff53dd, #7c119f, #0481ff);">
+    <nav class="border-2 border-b-gray-500 border-t-gray-500 p-2 bg-slate-50 flex justify-between items-center">
+        <div class="flex gap-x-10 justify-center">
+            <a href="" class="hover:border-b-2 hover:border-b-gray-500">Profile</a>
+            <a href=""class="hover:border-b-2 hover:border-b-gray-500" >Health Check Quiz</a>
+            <a href="" class="border-b-2 border-b-gray-500">Health Check Statistics</a>
+        </div>
+        <div class="flex gap-8 text-lg ml-auto">
+            <img src="/Images/Logo.png" alt="Sky Logo" class="w-14 ">
+            <a href="" class="hover:border-b-2 hover:border-b-gray-500">Sign out</a>
+        </div>
+    </nav>  
+    <main class="flex mx-auto mb-6 w-max gap-y-8 mt-2 text-2xl items-center text-center flex-col">
+        <h1 class="text-white font-bold text-5xl mt-4 mb-4 underline">Team Summary</h1>
+        <div>
+            <div class="flex flex-row justify-between gap-x-20">
+              <div class="text-center p-4 w-52 border-black border-2 bg-white font-semibold">
+                <p class="mb-4">Positive Votes</p>
+                <div class="relative w-32 h-32 mx-auto rounded-full" style="background: conic-gradient(green 16deg, gray 90deg 360deg);">
+                <div class="absolute inset-4 bg-white rounded-full"></div>
+                  <p class="absolute inset-0 flex items-center justify-center text-center text-black">5%</p>
+                </div>
+              </div>
+              <div class="text-center p-4 w-52 border-black border-2 bg-white font-semibold">
+                <p class="mb-4">Stable Votes</p>
+                <div class="relative w-32 h-32 mx-auto rounded-full" style="background: conic-gradient(orange 220deg, gray 90deg 360deg);">
+                <div class="absolute inset-4 bg-white rounded-full"></div>
+                  <p class="absolute inset-0 flex items-center justify-center text-center text-black">60%</p>
+                </div>
+              </div>             
+              <div class="text-center p-4 w-52 border-black border-2 bg-white font-semibold">
+                <p class="mb-4">Negative Votes</p>
+                <div class="relative w-32 h-32 mx-auto rounded-full" style="background: conic-gradient(red 140deg, gray 90deg 360deg);">
+                <div class="absolute inset-4 bg-white rounded-full"></div>
+                  <p class="absolute inset-0 flex items-center justify-center text-center text-black">35%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overflow-x-auto text-base">
+            <table class="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr class="bg-gray-100">
+                  <th class="py-3 px-4 border-b text-left">Delivering Value</th>
+                  <th class="py-3 px-4 border-b text-left">Easy to Release</th>
+                  <th class="py-3 px-4 border-b text-left">Health of Codebase</th>
+                  <th class="py-3 px-4 border-b text-left">Fun</th>
+                  <th class="py-3 px-4 border-b text-left">Mission</th>
+                  <th class="py-3 px-4 border-b text-left">Pawns or Players</th>
+                  <th class="py-3 px-4 border-b text-left">Suitable Process</th>
+                  <th class="py-3 px-4 border-b text-left">Speed</th>
+                  <th class="py-3 px-4 border-b text-left">Support</th>
+                  <th class="py-3 px-4 border-b text-left">Teamwork</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                </tr>
+                <tr>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6  border-b bg-orange-600"></td>
+                  <td class="p-6  border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                </tr>
+                <tr>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                </tr>
+                <tr>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                </tr>
+                <tr>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                </tr>
+                <tr>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                  <td class="p-6 border-b bg-red-600"></td>
+                  <td class="p-6 border-b bg-green-700"></td>
+                  <td class="p-6 border-b bg-orange-600"></td>
+                </tr>
+              </tbody>  
+            </table>
+          </div>
+          <form action="" class="bg-white p-8  border-2 border-black">
+            <h1 class="text-3xl font-bold underline mb-4">Check Progress of Cards</h1>
+            <label for="">Date:
+                <input type="date" name="" id=" " class=" p-1 border-2 border-black" > - <input type="date" name="" id="" class=" p-1 border-2 border-black" >
+            </label> <br>
+            <label for="" class="block mt-4">Select a card: 
+                <select name="" id="" class=" p-1 border-2 border-black w-[65%]">
+                    <option value="">Teamwork</option>
+                    <option value="">Fun</option>
+                </select>
+            </label>
+            <div class="flex flex-row gap-x-20">
+                <div class="flex flex-col justify-center items-center h-full">
+                    <div class="flex flex-col items-center">
+                      <img src="/Images/arrow.svg" class="w-56" alt="">
+                    </div>
+                    <div class="flex justify-center w-52 border-t-2 border-t-black pt-4">Your Progress</div>
+                </div>
+                <div class="flex flex-col justify-center items-center h-full">
+                    <div class="flex flex-col items-center">
+                      <img src="/Images/arrow.svg" class="w-56" alt="">
+                    </div>
+                    <div class="flex justify-center w-52 border-t-2 border-t-black pt-4">Team Progress</div>
+                </div>
+            </div>
+          </form>
+    </main>
 </body>
 </html>
