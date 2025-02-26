@@ -15,7 +15,7 @@
       <a href="" class="border-b-2 border-b-gray-500">Health Check Statistics</a>
     </div>
     <div class="flex gap-8 text-lg ml-auto">
-      <img src="/Images/Logo.png" alt="Sky Logo" class="w-14 ">
+      <img src="/Images/_Logo.png" alt="Sky Logo" class="w-14 ">
       <a href="" class="hover:border-b-2 hover:border-b-gray-500">Sign out</a>
     </div>
   </nav>
@@ -248,12 +248,14 @@
             </label>
             <label for="" class="mt-2 block">Select a department: 
               <select name="" id=""  class="border-[1px] border-black">
+                <option value=""></option>
                 <option value="">Department 1</option>
                 <option value="">Department 2</option>
               </select>
             </label>
             <label for="" class="mt-2 block">Select a team: 
               <select name="" id=""  class="border-[1px] border-black">
+                <option value=""></option>
                 <option value="">Team 1</option>
                 <option value="">Team 2</option>
                 <option value="">Team 3</option>
@@ -348,19 +350,57 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-row gap-x-20 mt-56">
+          <div class="flex flex-row gap-x-20 mt-32">
             <div class="flex flex-col justify-center items-center h-full">
+              <h1 class="top-0 text-center font-bold mb-6">Department/Team Summary</h1>
+                <div class="flex flex-row justify-center gap-x-4 text-xs">
+                  <figure>
+                    <img src="/Images/figArrowUp.svg" alt="" class="w-10 mx-auto h-10 border-2 border-black">
+                    <figcaption>Improving Progress</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="/Images/figArrowDown.svg" alt="" class="w-10 mx-auto h-10 border-2 border-black">
+                    <figcaption>Worsening Progress</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="/Images/figArrowStable.svg" alt="" class="w-10 mx-auto h-10 border-2 border-black">
+                    <figcaption>Stable Progress</figcaption>
+                  </figure>
+                </div>
+                <div class="flex flex-row gap-x-4 justify-center text-xs mt-4">
+                  <figure> 
+                    <div class="w-10 h-10 mx-auto bg-red-800 border-2 border-black"></div>
+                    <figcaption>Poor rating</figcaption>
+                  </figure>
+                  <figure>
+                    <div class="w-10 h-10 mx-auto bg-orange-600 border-2 border-black"></div>
+                    <figcaption>Average rating</figcaption>
+                  </figure>
+                  <figure>
+                    <div class="w-10 h-10 mx-auto bg-green-600 border-2 border-black"></div>
+                    <figcaption>Good rating</figcaption>
+                  </figure>
+                </div>
                 <div class="flex flex-row items-center">
-                  <ul class="flex flex-row gap-x-4 mb-28 mt-20">
+                  <ul class="flex flex-row gap-x-4 mb-14 mt-20">
                     <li><img src="/Images/stableOrange.svg" class="w-20 h-20"></li>
                     <li><img src="/Images/stableRed.svg" alt="" class="w-20 h-20"></li>
                     <li><img src="/Images/upGreen.svg" alt="" class="w-20 h-20"></li>
                     <li><img src="/Images/upRed.svg" alt="" class="w-20 h-20"></li>
                   </ul>
                 </div>
-                <div class="flex justify-center w-96 border-t-2 font-bold border-t-black pt-4">Team Progress</div>
+                <div class="flex justify-center w-96 border-t-2 font-bold border-t-black pt-4">
+                  <ul class="flex flex-row gap-x-4">
+                    <li>Session 1</li>
+                    <li>Session 2</li>
+                    <li>Session 3</li>
+                    <li>Session 4</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </main>
