@@ -1,13 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/input.css">
-    <link rel="stylesheet" href="/CSS/output.css">
-    <title>Document</title>
-</head>
-<body>
+    <meta charset="UTF-8" />
+    <title>Engineer Quiz</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
     
+</head>
+<style>
+    /* Updated background color to white if exact Sky color is unknown */
+    body {
+        background: linear-gradient(90deg, #f56400 9.9%, #ff0000 35%, #b5007d 60%, #21429c 85%, #0071ff 100%);
+    }
+</style>
+<body>
+    <nav class="border-2 border-b-gray-500 border-t-gray-500 p-2 bg-slate-50 flex justify-between items-center">
+        <div class="flex gap-x-10 justify-center">
+            <a href="" class="hover:border-b-2 hover:border-b-gray-500">Profile</a>
+            <a href=""class="hover:border-b-2 hover:border-b-gray-500" >Health Check Quiz</a>
+            <a href="" class="border-b-2 border-b-gray-500">Health Check Statistics</a>
+        </div>
+        <div class="flex gap-8 text-lg ml-auto">
+            <img src="sky-logo.jpg" alt="Sky Logo" class="w-14 ">
+            <a href="" class="hover:border-b-2 hover:border-b-gray-500">Sign out</a>
+        </div>
+    </nav>  
+    <h1 class="mb-4 font-bold text-4xl">Instructions</h1>
+    <p>To complete a health check, you'll go through a series of statements related to key aspects of the team's performance and well-being. 
+        <br> For each statement, you'll rate it using a button that corresponds to Amber, Red, or Green, based on the current state of that area. 
+        <br>Each color is also associated with a trend indicator—Stable, Improving, or Worsening—to track progress over time.
+        <br>This helps identify strengths and areas needing improvement, ensuring a clear overview of the team's overall health.</p>
+
+        
+        <select name="" id="" class="border-2 w-1/6 mb-2 border-black">
+            <option value="null">Select Session Date *</option>
+        </select> <br>
+        
+        <select name="" id="" class="border-2 w-1/6 mb-2 border-black">
+            <option value="null">Select Your Role *</option>
+        </select> <br>
+        
+        <select name="" id="" class="border-2 w-1/6 mb-2 border-black">
+            <option value="null">Select Your Team *</option>
+        </select> <br>
+        
+        <label for="comments" class="block font-semibold mb-2">Additional Comments:</label>
+        <textarea id="comments" name="comments" class="border-2 border-black w-1/4 h-40 p-2 resize-none overflow-y-auto"></textarea><br>
+          
+        
+        <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/6 rounded-md">Change</button>
+        <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/4 rounded-md">Save</button>
+        <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/6 rounded-md">Submit</button>
+        
+        <div class="flex flex-row gap-x-4 justify-center text-xs mt-4">
+            <figure> 
+              <div class="w-10 h-10 mx-auto bg-red-800 border-2 border-black"></div>
+              <figcaption>Poor rating</figcaption>
+            </figure>
+            <figure>
+              <div class="w-10 h-10 mx-auto bg-orange-600 border-2 border-black"></div>
+              <figcaption>Average rating</figcaption>
+            </figure>
+            <figure>
+              <div class="w-10 h-10 mx-auto bg-green-600 border-2 border-black"></div>
+              <figcaption>Good rating</figcaption>
+            </figure>
+          </div>
+
+          
+
+          <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+        </select> <br>
+
+        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+            <option value="null">Select One</option>
+            <option value="">Stable</option>
+            <option value="">Improving</option>
+            <option value=""> Worsening</option>
+
+            
 </body>
 </html>
