@@ -12,8 +12,88 @@
     body {
         background: linear-gradient(90deg, #f56400 9.9%, #ff0000 35%, #b5007d 60%, #21429c 85%, #0071ff 100%);
     }
+    .myway{
+        position: absolute;
+        top: 8rem; /* Equivalent to top-2 in Tailwind */
+        right: 12rem; /* Equivalent to right-2 in Tailwind */
+        display: flex;
+        flex-direction: row;
+        gap: 1rem; /* Equivalent to gap-x-4 in Tailwind */
+        font-size: 0.75rem; /* Equivalent to text-xs in Tailwind */
+    }
+
+    .selectway{
+        position: absolute;
+        top: 12rem; /* Equivalent to top-2 in Tailwind */
+        right: 2rem; /* Equivalent to right-2 in Tailwind */
+        display: flex;
+        flex-direction: row;
+        gap: 1rem; /* Equivalent to gap-x-4 in Tailwind */
+        font-size: 0.75rem; /* Equivalent to text-xs in Tailwind */
+        border: 2px solid black;  /* Equivalent to border-2 border-black */
+        width: 7%;            /* Equivalent to w-1/6 (1/6th of the container width) */
+        margin-bottom: 1rem; 
+    }
+
+    .leftside{
+        margin-bottom: 1rem; /* Equivalent to mb-4 (adds spacing below) */
+        font-weight: bold; /* Equivalent to font-bold */
+        font-size: 2.25rem; /* Equivalent to text-4xl (36px) */
+        margin-top: 6rem; /* Equivalent to top-2 in Tailwind */
+        margin-left: 16rem;
+    }
+
+    .scrolly{
+        border: 2px solid black; /* Equivalent to border-2 border-black */
+         /* Equivalent to w-1/6 (1/6th of the container width) */
+        margin-bottom: 0.5rem; 
+        margin-left: 16rem;
+    }
+    .ac{
+        display: block; /* Equivalent to block (ensures it takes the full width) */
+        font-weight: 600; /* Equivalent to font-semibold */
+        margin-bottom: 0.5rem; 
+        margin-left: 16rem;
+    }
+     
+            
+            /* Style for the circular button */
+            .circular-button {
+                width: 35px; /* Set the width */
+                height: 35px; /* Set the height */
+                border-radius: 50%; /* Make it circular */
+                background-color: #c9cfc9; /* Background color */
+                border: none; /* Remove border */
+                cursor: pointer; /* Pointer cursor on hover */
+                outline: none; /* Remove outline */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+                transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Smooth transition */
+                position: absolute; /* Position absolutely */
+            }
+
+            /* Clicked state */
+            .circular-button.clicked {
+                background-color: #989c98; /* Darker green */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+                border: 3px solid #000000; /* Add a border */
+            }
+
+
+        
+            .wordstack{
+                
+                position: absolute;
+                 /* Equivalent to top-2 in Tailwind */
+                right: 32rem; /* Equivalent to right-2 in Tailwind */
+                display: flex;
+                flex-direction: row;
+                
+            }                        
+    
+    
 </style>
 <body>
+    
     <nav class="border-2 border-b-gray-500 border-t-gray-500 p-2 bg-slate-50 flex justify-between items-center">
         <div class="flex gap-x-10 justify-center">
             <a href="" class="hover:border-b-2 hover:border-b-gray-500">Profile</a>
@@ -25,119 +105,190 @@
             <a href="" class="hover:border-b-2 hover:border-b-gray-500">Sign out</a>
         </div>
     </nav>  
-    <h1 class="mb-4 font-bold text-4xl">Instructions</h1>
-    <p>To complete a health check, you'll go through a series of statements related to key aspects of the team's performance and well-being. 
-        <br> For each statement, you'll rate it using a button that corresponds to Amber, Red, or Green, based on the current state of that area. 
-        <br>Each color is also associated with a trend indicator—Stable, Improving, or Worsening—to track progress over time.
+    <div class="myway">
+        <figure> 
+            <div class="w-10 h-10 bg-red-800 border-2 border-black"></div>
+            <figcaption>Poor rating</figcaption>
+        </figure>
+        <figure>
+            <div class="w-10 h-10 bg-orange-600 border-2 border-black"></div>
+            <figcaption>Average rating</figcaption>
+        </figure>
+        <figure>
+            <div class="w-10 h-10 bg-green-600 border-2 border-black"></div>
+            <figcaption>Good rating</figcaption>
+        </figure>
+    </div>
+
+    <button class="circular-button"  style=" position: absolute; top: 12rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 12rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 12rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <button class="circular-button"  style=" position: absolute; top: 16rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 16rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 16rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <button class="circular-button"  style=" position: absolute; top: 22rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 22rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 22rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <button class="circular-button"  style=" position: absolute; top: 28rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 28rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 28rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <button class="circular-button"  style=" position: absolute; top: 34rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 34rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 34rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <button class="circular-button"  style=" position: absolute; top: 40rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 40rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 40rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <button class="circular-button"  style=" position: absolute; top: 46rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 46rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 46rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <button class="circular-button"  style=" position: absolute; top: 52rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 52rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 52rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <button class="circular-button"  style=" position: absolute; top: 56rem; right: 14rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 56rem; right: 19rem; display: flex; flex-direction: row;"></button>
+    <button class="circular-button"  style=" position: absolute; top: 56rem; right: 25rem; display: flex; flex-direction: row;"></button>
+
+    <script>
+        // JavaScript to toggle the clicked state for all buttons
+        const buttons = document.querySelectorAll('.circular-button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('clicked'); // Toggle the 'clicked' class
+            });
+        });
+    </script>
+
+
+        <p class="wordstack" style="top: 12rem;">Delivering Value</p>
+        <p class="wordstack" style="top: 16rem;"> Easy To Release</p>
+        <p class="wordstack" style="top: 22rem;">Health of CodeBase</p>
+        <p class="wordstack" style="top: 28rem;">Fun</p>
+        <p class="wordstack" style="top: 34rem;">Missions</p>
+        <p class="wordstack" style="top: 40rem;"> Pawns of players</p>
+        <p class="wordstack" style="top: 46rem;">Subtle Process</p>
+        <p class="wordstack" style="top: 52rem;">Speed</p>
+        <p class="wordstack" style="top: 56rem;">Teamwork</p>
+    
+
+        
+        
+
+
+
+
+    <h1  class="leftside">Instructions</h1>
+    <p style="margin-left: 8rem;">To complete a health check, you'll go through a series of statements related to key aspects of the team's performance and well-being. 
+        <br> For each statement, you'll rate it using a button that corresponds to Amber, Red, or Green, <br>based on the current state of that area. 
+        <br>Each color is also associated with a trend indicator—Stable, Improving, or Worsening— to track progress over time.
         <br>This helps identify strengths and areas needing improvement, ensuring a clear overview of the team's overall health.</p>
 
         
-        <select name="" id="" class="border-2 w-1/6 mb-2 border-black">
+        <select name="" id="" class="scrolly"  style="margin-top: 1rem;">
             <option value="null">Select Session Date *</option>
         </select> <br>
         
-        <select name="" id="" class="border-2 w-1/6 mb-2 border-black">
+        <select name="" id="" class="scrolly" style="margin-top: 1rem;">
             <option value="null">Select Your Role *</option>
         </select> <br>
         
-        <select name="" id="" class="border-2 w-1/6 mb-2 border-black">
+        <select name="" id="" class="scrolly" style="margin-top: 1rem;">
             <option value="null">Select Your Team *</option>
         </select> <br>
         
-        <label for="comments" class="block font-semibold mb-2">Additional Comments:</label>
-        <textarea id="comments" name="comments" class="border-2 border-black w-1/4 h-40 p-2 resize-none overflow-y-auto"></textarea><br>
+        <label for="comments" class="ac" style="margin-top: 1rem;" >Additional Comments:</label>
+        <textarea id="comments" name="comments" class="border-2 border-black w-1/4 h-40 p-2 resize-none overflow-y-auto" style="margin-left: 16rem; width:25% "></textarea><br>
           
         
-        <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/6 rounded-md">Change</button>
+        <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/6 rounded-md" style="margin-left: 16rem;">Change</button>
         <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/4 rounded-md">Save</button>
         <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/6 rounded-md">Submit</button>
         
-        <div class="flex flex-row gap-x-4 justify-center text-xs mt-4">
-            <figure> 
-              <div class="w-10 h-10 mx-auto bg-red-800 border-2 border-black"></div>
-              <figcaption>Poor rating</figcaption>
-            </figure>
-            <figure>
-              <div class="w-10 h-10 mx-auto bg-orange-600 border-2 border-black"></div>
-              <figcaption>Average rating</figcaption>
-            </figure>
-            <figure>
-              <div class="w-10 h-10 mx-auto bg-green-600 border-2 border-black"></div>
-              <figcaption>Good rating</figcaption>
-            </figure>
-          </div>
+      
 
-          
+        
 
-          <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+
+
+          <select name="" id="" class="selectway" >
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 17rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 22rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 27rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 32rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 37rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 42rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 47rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 52rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
         </select> <br>
 
-        <select name="" id="" class="border-2 w-1/6 mb-4 border-black">
+        <select name="" id="" class="selectway" style="top: 57rem;">
             <option value="null">Select One</option>
             <option value="">Stable</option>
             <option value="">Improving</option>
             <option value=""> Worsening</option>
+
 
             
+      
 </body>
 </html>
