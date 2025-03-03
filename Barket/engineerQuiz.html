@@ -5,12 +5,13 @@
     <title>Engineer Quiz</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
 <style>
     /* Updated background color to white if exact Sky color is unknown */
     body {
-        background: linear-gradient(90deg, #f56400 9.9%, #ff0000 35%, #b5007d 60%, #21429c 85%, #0071ff 100%);
+        background: white;
     }
     .myway{
         position: absolute;
@@ -83,10 +84,11 @@
             .wordstack{
                 
                 position: absolute;
-                 /* Equivalent to top-2 in Tailwind */
                 right: 32rem; /* Equivalent to right-2 in Tailwind */
                 display: flex;
                 flex-direction: row;
+                align-items: center; /* Align icon and text vertically */
+                gap: 0.5rem; 
                 
             }                        
     
@@ -102,7 +104,7 @@
         </div>
         <div class="flex gap-8 text-lg ml-auto">
             <img src="sky-logo.jpg" alt="Sky Logo" class="w-14 ">
-            <a href="" class="hover:border-b-2 hover:border-b-gray-500">Sign out</a>
+            <a href="" class="hover:border-b-2 hover:border-b-gray-500" style="margin-top: 1rem;">Sign out</a>
         </div>
     </nav>  
     <div class="myway">
@@ -168,15 +170,16 @@
     </script>
 
 
-        <p class="wordstack" style="top: 12rem;">Delivering Value</p>
-        <p class="wordstack" style="top: 16rem;"> Easy To Release</p>
-        <p class="wordstack" style="top: 22rem;">Health of CodeBase</p>
-        <p class="wordstack" style="top: 28rem;">Fun</p>
-        <p class="wordstack" style="top: 34rem;">Missions</p>
-        <p class="wordstack" style="top: 40rem;"> Pawns of players</p>
-        <p class="wordstack" style="top: 46rem;">Subtle Process</p>
-        <p class="wordstack" style="top: 52rem;">Speed</p>
-        <p class="wordstack" style="top: 56rem;">Teamwork</p>
+    <p class="wordstack" style="top: 12rem;">Delivering Value <i class="fas fa-question-circle"></i></p>
+    <p class="wordstack" style="top: 16rem;"> Easy To Release <i class="fas fa-question-circle"></i></p>
+    <p class="wordstack" style="top: 22rem;">Health of CodeBase <i class="fas fa-question-circle"></i></p>
+    <p class="wordstack" style="top: 28rem;">Fun <i class="fas fa-question-circle"></i></p>
+    <p class="wordstack" style="top: 34rem;">Missions <i class="fas fa-question-circle"></i></p>
+    <p class="wordstack" style="top: 40rem;"> Pawns of players <i class="fas fa-question-circle"></i></p>
+    <p class="wordstack" style="top: 46rem;">Subtle Process <i class="fas fa-question-circle"></i></p>
+    <p class="wordstack" style="top: 52rem;">Speed <i class="fas fa-question-circle"></i></p>
+    <p class="wordstack" style="top: 56rem;">Teamwork <i class="fas fa-question-circle"></i></p>
+
     
 
         
@@ -210,7 +213,7 @@
         
         <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/6 rounded-md" style="margin-left: 16rem;">Change</button>
         <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/4 rounded-md">Save</button>
-        <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black bg-white p-1 w-1/6 rounded-md">Submit</button>
+        <button type="submit" class="mt-10 text-lg border-2 mb-4 border-black p-1 w-1/6 rounded-md" style="margin-left: 6rem; background-color: #333; color: white;">Submit</button>
         
       
 
